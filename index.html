@@ -101,7 +101,7 @@
                 let printPage = "", say = 0, stickerCount = 0;
                 for (const rowValue of gridData) {
                     let bKs = rowValue.Urun.slice(0,24).lastIndexOf(" ");
-                    let iKs = rowValue.Urun.slice(bks,bks + 24).lastIndexOf(" ");
+                    let iKs = rowValue.Urun.slice(bKs,bKs + 24).lastIndexOf(" ");
 
                     if (say == 0) {
                         printPage += '<div class="page">';
