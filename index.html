@@ -113,7 +113,8 @@
                             }
                             printPage += '<table>'+
                                             '<tr>'+
-                                                '<td><span class="txt-label">'+ rowValue.Urun +'</span> </td>'+
+                                                '<td><span class="txt-label">'+ rowValue.Urun.slice(0,24) +'</span> </td>'+
+                                                '<td><span class="txt-label">'+ rowValue.Urun.slice(24) +'</span> </td>'+
                                                 '<td><span class="txt-label">'+ rowValue.Renk +'</span> </td>'+
                                                 '<td><span class="txt-label">'+ rowValue.Beden +'</span> </td>'+
                                                 '<td><span class="txt-label barcode">'+ rowValue.Barkod +'</span></td>'+
@@ -130,7 +131,8 @@
                         }                        
                         printPage += '<table>'+
                                             '<tr>'+
-                                                '<td><span class="txt-label">'+ rowValue.Urun +'</span> </td>'+
+                                                '<td><span class="txt-label">'+ rowValue.Urun.slice(0,24) +'</span> </td>'+
+                                                '<td><span class="txt-label">'+ rowValue.Urun.slice(24) +'</span> </td>'+
                                                 '<td><span class="txt-label">'+ rowValue.Renk +'</span> </td>'+
                                                 '<td><span class="txt-label">'+ rowValue.Beden +'</span> </td>'+
                                                 '<td><span class="txt-label barcode">'+ rowValue.Barkod +'</span></td>'+
@@ -178,7 +180,7 @@
                                             '    max-width: 52.5mm;'+
                                             '    height: 35mm;'+
                                             '    max-height: 35mm;'+
-                                            '    font-size: 8px;'+
+                                            '    font-size: 7px;'+
                                             '    padding: 10 0 0 10;'+
                                             '    float: left;'+
                                             '}'+
@@ -195,7 +197,7 @@
                                         '    max-width: 52.5mm;'+
                                         '    height: 35mm;'+
                                         '    max-height: 35mm;'+
-                                        '    font-size: 8px;'+
+                                        '    font-size: 7px;'+
                                         '    padding: 10px 0px 0px 10px;'+
                                         '    float: left;'+
                                         '}'+
