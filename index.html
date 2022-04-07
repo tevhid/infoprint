@@ -100,8 +100,9 @@
                 let gridData = printGrid.data("kendoGrid").dataSource.data();
                 let printPage = "", say = 0, stickerCount = 0;
                 for (const rowValue of gridData) {
-                    let bKs = rowValue.Urun.slice(0,24).lastIndexOf(" ");
-                    let iKs = rowValue.Urun.slice(bKs,bKs + 24).lastIndexOf(" ");
+
+                    let bKs = rowValue.Urun.length <= 24 ? 24 : rowValue.Urun.slice(0,24).lastIndexOf(" ");
+                    let iKs = rowValue.Urun.length <= 24 ? 24 : rowValue.Urun.slice(bKs,bKs + 24).lastIndexOf(" ");
 
                     if (say == 0) {
                         printPage += '<div class="page">';
